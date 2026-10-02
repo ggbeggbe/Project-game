@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>World Strategy</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <main id="game">
+    <header class="topbar">
+      <div><strong>WORLD STRATEGY</strong><span class="subtitle"> WORLD DOMINION</span></div>
+      <div id="date">2026년 1월</div>
+    </header>
+    <section class="layout">
+      <div class="map-panel">
+        <div id="worldMap" class="world-map" aria-label="세계 전략 지도"></div>
+      </div>
+      <aside class="side-panel">
+        <h2 id="cityName">서울</h2>
+        <div id="cityInfo"></div>
+        <div class="commands">
+          <button data-command="develop">개발</button>
+          <button data-command="commerce">상업</button>
+          <button data-command="recruit">징병</button>
+          <button data-command="train">훈련</button>
+          <button data-command="move">이동</button>
+          <button data-command="diplomacy">외교</button>
+        </div>
+        <button id="endTurn" class="end-turn">이번 달 종료</button>
+        <div id="log" class="log">서울을 선택했습니다.</div>
+      </aside>
+    </section>
+  </main>
+  <script type="module" src="src/game.js"></script>
+</body>
+</html>
